@@ -23,7 +23,7 @@ This project examines election data to gain insights into the voting results. It
 There are 3 files:
   1. main.py
   2. election_data.csv
-  3. election_analysis.txt
+  3. output file = election_analysis.txt
 
 The script executes the following operations:
   1. Loads the election dataset from a CSV file.
