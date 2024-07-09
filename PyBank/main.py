@@ -1,7 +1,9 @@
 import csv
+import os
+
 
 # loading the budget_data.csv
-file_path = r'C:\Module3_Python-Challenge\PyBank\Resources\budget_data.csv'
+file_path = os.path.join('Resources', 'budget_data.csv')
 dates = []
 profits_losses = []
 
@@ -45,6 +47,6 @@ summary = (
 print(summary)
 
 # Export of summary to a text file
-output_file_path = r'C:\Module3_Python-Challenge\PyBank\analysis\financial_analysis.txt' 
+output_file_path = os.path.join('analysis', 'financial_analysis.txt') 
 with open(output_file_path, 'w') as file:
     file.write(summary)
