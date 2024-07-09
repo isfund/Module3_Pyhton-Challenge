@@ -1,8 +1,9 @@
 import csv
+import os
 from collections import Counter
 
 # Loading dataset
-file_path = r'C:\Module3_Python-Challenge\PyPoll\Resources\election_data.csv' 
+file_path = os.path.join('Resources', 'election_data.csv') 
 votes = []
 
 with open(file_path, 'r') as file:
@@ -42,6 +43,6 @@ summary += (
 print(summary)
 
 # Export the analysis summary to a text file
-output_file_path = r'C:\Module3_Python-Challenge\PyPoll\analysis\election_analysis.txt'
+output_file_path = os.path.join('analysis', 'election_analysis.txt')
 with open(output_file_path, 'w') as file:
     file.write(summary)
